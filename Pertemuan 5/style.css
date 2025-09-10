@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+nav ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background: #111;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.6);
+}
+
+nav ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 14px 24px;
+  color: #f5f5f5;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: #333;
+  color: #4da6ff;
+  border-radius: 4px;
+  transform: translateY(-2px);
+}
+
+#home,#main {
+  background: linear-gradient(135deg, #1a1a1a, #222);
+  border-left: 6px solid #4da6ff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+#home h2,#main h2 {
+  color: #4da6ff;
+  margin-bottom: 10px;
+}
+
+#home p,#main p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.social-links {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  padding: 10px 18px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+.social-links a.ig {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  color: white;
+}
+
+.social-links a.ig:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+.social-links a.gh {
+  background: #333;
+  color: #f5f5f5;
+}
+
+.social-links a.gh:hover {
+  background: #333;
+  color: #4da6ff;
+  transform: translateY(-2px);
+}
+
+#study {
+  background: #1e1e1e;
+  border-left: 6px solid #4da6ff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+#study h2 {
+  color: #4da6ff;
+  margin-bottom: 15px;
+}
+
+#study p {
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+#study table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+#study thead {
+  background: #4da6ff;
+  color: #111;
+}
+
+#study th, 
+#study td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+#study tbody tr {
+  background: #2a2a2a;
+  transition: all 0.3s ease;
+}
+
+#study tbody tr:nth-child(even) {
+  background: #333;
+}
+
+.container {
+  display: flex;
+  gap: 15px;
+  margin: 20px;
+  min-height: 400px;
+}
+
+.container aside,
+.container main {
+  padding: 20px;
+  border-radius: 12px;
+  background: #1e1e1e;
+  border: 1px solid #333;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  animation: fadeIn 0.6s ease;
+}
+
+.left, .right {
+  flex: 1;
+}
+
+main {
+  flex: 2;
+  position: relative;
+  overflow: hidden;
+}
+
+aside fieldset {
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 15px;
+  background: #1a1a1a;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+aside legend {
+  font-weight: bold;
+  color: #4da6ff;
+  padding: 0 8px;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+aside ul li {
+  margin: 8px 0;
+}
+
+aside ul li a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #f5f5f5;
+  background: #2a2a2a;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+aside ul li a:hover {
+  background: #333;
+  color: #4da6ff;
+  transform: translateX(5px);
+}
+
+main section {
+  display: none;
+  animation: fadeIn 0.6s ease;
+}
+
+body:not(:has(:target)) main #main {
+  display: block;
+}
+
+main section:target {
+  display: block;
+}
+
+footer {
+  background: #111;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border-top: 1px solid #333;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.5);
+}
