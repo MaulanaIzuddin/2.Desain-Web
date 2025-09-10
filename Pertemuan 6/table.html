@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.3.4/css/dataTables.dataTables.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/darkly/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <b>DAFTAR TEMAN</b>
+    <table id="tabel" class="display">
+        <thead>
+            <tr>
+                <th>NAMA</th>
+                <th>UMUR</th>
+                <th>PEKERJAAN / PENDIDIKAN</th>
+                <th>HOBI</th>
+                <th>NO TELFON</th>
+                <th>ALAMAT</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>AHMAD ILHAM</td>
+                <td>19</td>
+                <td>S1 MANAJEMEN</td>
+                <td>SEPAK BOLA</td>
+                <td>081234567890</td>
+                <td>JOMBANG</td>
+            </tr>
+            <tr>
+                <td>MUHAMMAD IRWANSYAH</td>
+                <td>20</td>
+                <td>BARISTA</td>
+                <td>FUTSAL</td>
+                <td>081234567891</td>
+                <td>JOMBANG</td>
+            </tr><tr>
+                <td>TAUFIQ WALHIDAYAH</td>
+                <td>21</td>
+                <td>SUPIR</td>
+                <td>MAIN PS</td>
+                <td>081234567892</td>
+                <td>JOMBANG</td>
+            </tr><tr>
+                <td>ALDAM EFENDY</td>
+                <td>22</td>
+                <td>S1 INFORMATIKA</td>
+                <td>NGEGAME</td>
+                <td>081234567893</td>
+                <td>SURABAYA</td>
+            </tr><tr>
+                <td>IDRIS SUSANTO</td>
+                <td>20</td>
+                <td>S1 INFORMATIKA</td>
+                <td>TIDUR</td>
+                <td>081234567894</td>
+                <td>SURABAYA</td>
+            </tr>
+        </tfoot>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.3.4/js/dataTables.js"></script>
+    <script>
+        new DataTable('#tabel');
+    </script>
+</body>
+</html>
